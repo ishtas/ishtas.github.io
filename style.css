@@ -1,0 +1,57 @@
+.filter-cat {
+  margin: 1em 0;
+}
+
+.f-cat {
+  color: #fff;
+  padding: 1em;
+  border: 5px solid #fff;
+}
+
+.f-cat[data-cat=cat-red] {
+  background: #ff4136;
+}
+
+.f-cat[data-cat=cat-green] {
+  background: #2ecc40;
+}
+
+.f-cat[data-cat=cat-blue] {
+  background: #0074d9;
+}
+
+.f-cat[data-cat3=cat-upper] {
+  text-transform: uppercase;
+}
+
+.f-cat[data-cat3=cat-lower] {
+  text-transform: lowercase;
+}
+
+.filter-cat-results .f-cat {
+  opacity: 0;
+  display: none;
+}
+.filter-cat-results .f-cat.active {
+  opacity: 1;
+  display: block;
+  -webkit-animation: fadeIn 0.65s ease forwards;
+  animation: fadeIn 0.65s ease forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
