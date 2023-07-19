@@ -103,59 +103,7 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="jumbotron">
-    <div class="container">
-        <h2>jQuery Filtering with Multiple Criteria</h2>
-        <p>Use the select input (dropdown) to filter elements and show only those which have the same value.</p>
-        <ul class="list-unstyled list-inline">
-            <li>See this example with:</li>
-            <li><a href="https://codepen.io/angelagiese/pen/QqXgWG">Buttons</a></li>
-            <li><a href="https://codepen.io/angelagiese/pen/xPVgxM/">Select</a></li>
-            <li><s>Multiple criteria</s></li>
-        </ul>
-    </div>
-</div>
 
-<div class="container filtering">
-    <div class="filter-cat row">
-        <div class="col col-md-4 col-xs-6">
-            <select class="form-control cat1">
-                <option value="cat-all">All colors</option>
-                <option value="cat-red">Red</option>
-                <option value="cat-blue">Blue</option>
-                <option value="cat-green">Green</option>
-            </select>
-        </div>
-        <div class="col col-md-4 col-xs-6">
-            <select class="form-control cat2">
-                <option value="cat-all">All numbers</option>
-                <option value="cat-even">Evens</option>
-                <option value="cat-odd">Odds</option>
-            </select>
-        </div>
-        <div class="col col-md-4 col-xs-6">
-            <select class="form-control cat3">
-                <option value="cat-all">All cases</option>
-                <option value="cat-upper">Upper</option>
-                <option value="cat-lower">Lower</option>
-            </select>
-        </div>
-    </div>
-    <div class="row filter-cat-results">
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-red" data-cat2="cat-odd" data-cat3="cat-lower">First</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-red" data-cat2="cat-even" data-cat3="cat-upper">Second</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-blue" data-cat2="cat-odd" data-cat3="cat-lower">Third</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-green" data-cat2="cat-even" data-cat3="cat-lower">Fourth</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-red" data-cat2="cat-odd" data-cat3="cat-lower">Fifth</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-blue" data-cat2="cat-even" data-cat3="cat-upper">Sixth</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-blue" data-cat2="cat-odd" data-cat3="cat-upper">Seventh</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-green" data-cat2="cat-even" data-cat3="cat-lower">Eighth</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-blue" data-cat2="cat-odd" data-cat3="cat-lower">Ninth</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-green" data-cat2="cat-even" data-cat3="cat-lower">Tenth</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-red" data-cat2="cat-odd" data-cat3="cat-upper">Eleventh</div>
-        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-green" data-cat2="cat-even" data-cat3="cat-upper">Twelfth</div>
-    </div>
-</div>
 <!-- partial -->
 
 
@@ -202,6 +150,7 @@
                         </div>
                     </div>
                 </header>
+
                 <div class="tide-page--school_readiness_funding_menu_priority_area">
                     <main class="rpl-page app-main">
                         <div class="rpl-above-content" style="background-image:url(/img/header-pattern-shape.png);">
@@ -265,10 +214,65 @@
                                                             <li class="rpl-anchor-links__item">
                                                                 <!----><a class="rpl-link rpl-text-link rpl-text-link--underline" data-print-url="http://www.schools.vic.gov.au#access-and-inclusion" href="#access-and-inclusion"><span class="rpl-link__inner"><span class="rpl-text-label rpl-text-label--small rpl-text-label--small--underline"><span>Access and Inclusion</span></span></span></a>
                                                             </li>
+
                                                         </ul>
                                                     </div>
                                                 </div><!---->
                                             </div>
+
+                                            <div class="jumbotron">
+    <div class="container">
+        <h2>jQuery Filtering with Multiple Criteria</h2>
+        <p>Use the select input (dropdown) to filter elements and show only those which have the same value.</p>
+        <ul class="list-unstyled list-inline">
+            <li>See this example with:</li>
+            <li><a href="https://codepen.io/angelagiese/pen/QqXgWG">Buttons</a></li>
+            <li><a href="https://codepen.io/angelagiese/pen/xPVgxM/">Select</a></li>
+            <li><s>Multiple criteria</s></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container filtering">
+    <div class="filter-cat row">
+        <div class="col col-md-4 col-xs-6">
+            <select class="form-control cat1">
+                <option value="cat-all">All colors</option>
+                <option value="cat-red">Red</option>
+                <option value="cat-blue">Blue</option>
+                <option value="cat-green">Green</option>
+            </select>
+        </div>
+        <div class="col col-md-4 col-xs-6">
+            <select class="form-control cat2">
+                <option value="cat-all">All numbers</option>
+                <option value="cat-even">Evens</option>
+                <option value="cat-odd">Odds</option>
+            </select>
+        </div>
+        <div class="col col-md-4 col-xs-6">
+            <select class="form-control cat3">
+                <option value="cat-all">All cases</option>
+                <option value="cat-upper">Upper</option>
+                <option value="cat-lower">Lower</option>
+            </select>
+        </div>
+    </div>
+    <div class="row filter-cat-results">
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-red" data-cat2="cat-odd" data-cat3="cat-lower">First</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-red" data-cat2="cat-even" data-cat3="cat-upper">Second</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-blue" data-cat2="cat-odd" data-cat3="cat-lower">Third</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-green" data-cat2="cat-even" data-cat3="cat-lower">Fourth</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-red" data-cat2="cat-odd" data-cat3="cat-lower">Fifth</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-blue" data-cat2="cat-even" data-cat3="cat-upper">Sixth</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-blue" data-cat2="cat-odd" data-cat3="cat-upper">Seventh</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-green" data-cat2="cat-even" data-cat3="cat-lower">Eighth</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-blue" data-cat2="cat-odd" data-cat3="cat-lower">Ninth</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-green" data-cat2="cat-even" data-cat3="cat-lower">Tenth</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-red" data-cat2="cat-odd" data-cat3="cat-upper">Eleventh</div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-green" data-cat2="cat-even" data-cat3="cat-upper">Twelfth</div>
+    </div>
+</div>
                                             <div class="rpl-col rpl-col--full">
                                                 <div class="rpl-markup tide-wysiwyg app-wysiwyg">
                                                     <div class="rpl-markup__inner">
