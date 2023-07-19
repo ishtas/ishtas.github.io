@@ -33,13 +33,13 @@ html {
   text-transform: lowercase;
 }
 
-.filter-cat-results .f-cat {
+.f-cat {
   opacity: 0;
   display: none;
 }
-.filter-cat-results .f-cat.active {
+ .f-cat.active {
   opacity: 1;
-  display: block;
+  display: flex;
   -webkit-animation: fadeIn 0.65s ease forwards;
   animation: fadeIn 0.65s ease forwards;
 }
