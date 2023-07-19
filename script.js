@@ -1,35 +1,37 @@
 var filterActive;
 
 function filterCategory(cat1, cat2, cat3) {
-        
-    // reset results list
-    $('.filter-cat-results .f-cat').removeClass('active');
-    
+    // hide all elements
+    $('.f-cat').removeClass('active');
+
     // the filtering in action for all criteria
-    var selector = ".filtering .f-cat";
+    var selector = ".f-cat";
+
     if (cat1 !== 'cat-all') {
-         selector = '[data-cat=' + cat1 + "]";
+        selector = selector + '[data-cat~="' + cat1 + '"]';
     }
     if (cat2 !== 'cat-all') {
-        selector = selector + '[data-cat2=' + cat2 + "]";
+        selector = selector + '[data-cat2~="' + cat2 + '"]';
     }
     if (cat3 !== 'cat-all') {
-        selector = selector + '[data-cat3=' + cat3 + "]";
+        selector = selector + '[data-cat3~="' + cat3 + '"]';
     }
-    
-    // show all results
+
+    // show filtered elements
     $(selector).addClass('active');
 
     // reset active filter
     filterActive = cat1;
 }
 
-// start by showing all items
-$('.filtering .f-cat').addClass('active');
+// show all items initially
+$('.f-cat').addClass('active');
 
 // call the filtering function when selects are changed
 $('.filtering select').change(function() {
+    var cat1 = $('.filtering select.cat1').val();
+    var cat2 = $('.filtering select.cat2').val();
+    var cat3 = $('.filtering select.cat3').val();
     
-    filterCategory($('.filtering select.cat1').val(), $('.filtering select.cat2').val(), $('.filtering select.cat3').val());
-    
+    filterCategory(cat1, cat2, cat3);
 });
